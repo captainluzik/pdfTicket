@@ -4,5 +4,9 @@ from .views import GeneratePdf
 
 
 urlpatterns = [
-    url(r'^pdf/(?P<user_id>[0-9]+)/$', GeneratePdf.as_view(), name='generatepdf'),
+    url(
+        regex=r'^pdf/(?P<user_id>[0-9]+)/$',
+        view=GeneratePdf.as_view(),
+        name='generatepdf',
+    ),
 ]

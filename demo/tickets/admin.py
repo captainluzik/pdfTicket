@@ -22,4 +22,4 @@ class TicketAdmin(admin.ModelAdmin):
 		)
 
 	def download_actions(self, obj):
-		return '<a class="button" href="{}".format(reverse(yourapp:yourview, kwargs = {"pk": obj.pk}))>Download</a>'
+		return '<a class="button" href="{}">Download</a>'.format(reverse('generatepdf'), kwargs = ('user_id'))
