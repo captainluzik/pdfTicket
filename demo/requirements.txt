@@ -1,7 +1,7 @@
 bootstrap-admin==0.3.7.1
 chardet==2.3.0
 command-not-found==0.3
-Django==1.8.7
+Django==1.11.28
 django-jet==1.0.6
 freeze==1.0.10
 gunicorn==19.4.5
